@@ -13,31 +13,73 @@
     />
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-      <button type="submit">Search</button>
-    </form>
-    <div class="gallery">
-      <!-- <div class="photo-card">
-        <img src="" alt="" loading="lazy" />
-        <div class="info">
-          <p class="info-item">
-            <b>Likes</b>
-          </p>
-          <p class="info-item">
-            <b>Views</b>
-          </p>
-          <p class="info-item">
-            <b>Comments</b>
-          </p>
-          <p class="info-item">
-            <b>Downloads</b>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <a href="./index.html">
+            <h1 class="header__title">
+              ImagesFinder <span class="header__title header__title--expansion">.app</span>
+            </h1>
+          </a>
+          <form class="search-form" id="search-form">
+            <input
+              class="search-form__input"
+              type="text"
+              name="searchQuery"
+              autocomplete="off"
+              placeholder="Type your query here..."
+            />
+            <button class="search-btn" type="submit">
+              <img class="search-btn__icon" src="./images/search.svg" alt="Magnifier" width="30" />
+            </button>
+          </form>
+        </div>
+      </header>
+      <main class="main">
+        <section class="section container">
+          <h2 class="app-slogan">Find images of the most incredible things</h2>
+          <div class="gallery">
+            <!-- <div class="photo-card">
+              <a class="photo-card__item" href="">
+                <div class="photo-card__tumb">
+                  <img class="photo-card__img" src="" alt="" loading="lazy" />
+                </div>
+                <div class="info">
+                  <p class="info-item">
+                    <b class="info-item__param">Likes</b>
+                    <span class="info-item__num"></span>
+                  </p>
+                  <p class="info-item">
+                    <b class="info-item__param">Views</b>
+                    <span class="info-item__num"></span>
+                  </p>
+                  <p class="info-item">
+                    <b class="info-item__param">Comments</b>
+                    <span class="info-item__num"></span>
+                  </p>
+                  <p class="info-item">
+                    <b class="info-item__param">Downloads</b>
+                    <span class="info-item__num"></span>
+                  </p>
+                </div>
+              </a>
+            </div> -->
+          </div>
+          <button type="button" class="load-more js-hidden">Load more</button>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>
+            Developed by
+            <a class="github-link" href="https://github.com/Solomon-IT-Dev" target="_blank"
+              >Solomon-IT-Dev</a
+            >
           </p>
         </div>
-      </div> -->
+      </footer>
     </div>
-    <button type="button" class="load-more">Load more</button>
-
     <script src="./index.js"></script>
   </body>
 </html>
